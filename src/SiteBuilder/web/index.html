@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><title>СайтКонструктор</title>
+<link rel="stylesheet" href="vendor/grapes.min.css"><link rel="stylesheet" href="app.css"></head><body>
+<div id="top">
+ <div class="brand">🧱 СайтКонструктор</div>
+ <div class="grp"><button id="bNew" title="Новый сайт из шаблона">📄 Новый</button><button id="bOpen" title="Открыть проект (Ctrl+O)">📂 Открыть</button><button id="bSave" title="Сохранить проект (Ctrl+S)">💾 Сохранить</button></div>
+ <div class="grp"><select id="pageSel" title="Страница"></select><button id="bPageAdd" title="Добавить страницу">➕</button><button id="bPageEdit" title="Свойства страницы и SEO">🔎 SEO</button><button id="bPageDel" title="Удалить страницу">🗑</button></div>
+ <div class="grp" id="devs"><button data-dev="desktop" class="on" title="Компьютер">🖥</button><button data-dev="tablet" title="Планшет">📟</button><button data-dev="mobile" title="Телефон">📱</button></div>
+ <div class="grp"><button id="bUndo" title="Отменить (Ctrl+Z)">↶</button><button id="bRedo" title="Повторить (Ctrl+Y)">↷</button><button id="bOutline" title="Показать границы блоков">▦</button><button id="bCode" title="HTML/CSS текущей страницы">&lt;/&gt; Код</button></div>
+ <div class="grp"><button id="bTheme" title="Цвета и шрифты">🎨 Тема</button><button id="bAI" class="accent" title="ИИ-помощник">🤖 ИИ</button></div>
+ <div class="grp right"><button id="bPreview" title="Открыть сайт в браузере">👁 Просмотр</button><button id="bExport" class="primary" title="Экспорт сайта">⬇ Экспорт</button></div>
+</div>
+<div id="main">
+ <div id="left"><div class="tabs"><button data-t="blocks" class="on">Блоки</button><button data-t="layers">Слои</button><button data-t="pagesT">Страницы</button></div>
+  <div class="pane on" id="blocksP"><input id="blockSearch" placeholder="🔍 Поиск блока…"><div id="blocks"></div></div>
+  <div class="pane" id="layersP"><div id="layers"></div></div>
+  <div class="pane" id="pagesTP"><div id="pagesList"></div></div></div>
+ <div id="center"><div id="gjs"></div></div>
+ <div id="right"><div class="tabs"><button data-t="styles" class="on">Стиль</button><button data-t="traits">Свойства</button><button data-t="ai">ИИ</button><button data-t="hist">История</button></div>
+  <div class="pane on" id="stylesP"><div class="hint" id="selHint">Выберите элемент на странице, чтобы изменить его стиль.</div><div id="selectors"></div><div id="styles"></div></div>
+  <div class="pane" id="traitsP"><div id="traits"></div><div id="quick"></div></div>
+  <div class="pane" id="aiP"></div>
+  <div class="pane" id="histP"></div></div>
+</div>
+<div id="status"><span id="stMsg">Готово</span><span id="stAI"></span></div>
+<script src="vendor/grapes.min.js"></script><script src="vendor/gjs-ru.js"></script>
+<script src="vendor/gjs-blocks-basic.js"></script><script src="vendor/gjs-forms.js"></script><script src="vendor/gjs-custom-code.js"></script><script src="vendor/gjs-tabs.js"></script><script src="vendor/gjs-tooltip.js"></script>
+<script src="vendor/jszip.min.js"></script>
+<script src="export.js"></script><script src="aiops.js"></script><script src="blocks.js"></script><script src="blocks2.js"></script><script src="templates.js"></script>
+<script src="app.js"></script><script src="ai.js"></script>
+</body></html>
